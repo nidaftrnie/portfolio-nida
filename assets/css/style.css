@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero-section {
+  position: relative;
+  background-image: url("../bg-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: black;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Konten di tengah layar */
+.hero-content {
+  position: relative;
+  z-index: 2; /* di atas overlay */
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: #b08968 !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  color: #3b2a20 !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #3b2a20 !important;
+}
+
+.about {
+  height: 500px;
+}
+
+h1 {
+  color: #7f4a35;
+}
+
+/* Contact Section */
+#contact h1 {
+  font-size: 3rem;
+  color: #7f4a35;
+}
+
+#contact h2 {
+  color: #d9b48f;
+}
+
+/* Fixed Social Icons */
+.social-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.social-fixed a {
+  font-size: 1.8rem;
+  color: #cdb38c;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-fixed a:hover {
+  color: #ce9745;
+  transform: scale(1.2);
+}
+
+.garis-vertical {
+  border-left: 5px solid #cdb38c;
+  height: 50px;
+}
+
+/* work experience */
+.custom-card {
+  background: linear-gradient(145deg, #f3e8dd, #e7d8c8);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(62, 44, 28, 0.15);
+  transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(62, 44, 28, 0.25);
+}
+
+.card-icon {
+  width: 90px;
+  height: 90px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #4a2f20;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #6b5645;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.learn-btn {
+  background-color: #c8a889;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  padding: 8px 18px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.learn-btn:hover {
+  background-color: #b38a67;
+}

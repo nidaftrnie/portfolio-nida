@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Nida Fitrianie</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="index.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" data-aos="fade-left" href="#home">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link"
+                href="#about"
+                data-aos="fade-left"
+                data-aos-delay="200"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link"
+                href="#"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link"
+                href="#"
+                data-aos="fade-left"
+                data-aos-delay="400"
+                >Certifications</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link"
+                href="#"
+                data-aos="fade-left"
+                data-aos-delay="400"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section d-flex align-items-center justify-content-center"
+      id="home"
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1 class="display-4 fw-bold">I AM</h1>
+        <h1 class="display-2 fw-bold">NIDA FITRIANIE</h1>
+        <h3 class="fw-bold" data-type="typing"></h3>
+        <a
+          href="#"
+          class="btn text-light mt-3 fw-semibold"
+          style="background-color: #d0ac94"
+          >Resume</a
+        >
+      </div>
+    </section>
+
+    <section class="about mt-4" id="about">
+      <div class="container">
+        <div class="row" style="min-height: 400px">
+          <!-- Kolom kiri: About Me di bawah -->
+          <div class="col-md-6 d-flex flex-column justify-content-end">
+            <h1
+              class="display-4 fw-bold"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              About Me.
+            </h1>
+            <hr style="color: #d0ac94" />
+          </div>
+
+          <!-- Kolom kanan: teks di tengah -->
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <p
+              class="lead mb-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              An enthusiastic and proactive Bachelor of Information Systems with
+              a strong passion for data analysis, quality assurance, system and
+              business analysis, and web development. Committed to continuous
+              learning and leveraging technology to contribute effectively.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-secondary align-self-start"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-experience py-5">
+      <div class="container">
+        <h1 class="section-title text-center display-4 fw-bold">
+          Work Experience
+        </h1>
+        <hr style="color: #d0ac94" />
+        <div class="row gy-4 mt-4">
+          <div class="col-md-6">
+            <div
+              class="card custom-card p-4 d-flex align-items-center flex-row"
+            >
+              <div class="col-4 text-center">
+                <img
+                  src="assets/img/training.png"
+                  alt="Icon"
+                  class="card-icon img-fluid"
+                />
+              </div>
+              <div class="col-8">
+                <h5 class="card-title">
+                  Lembaga Pengembangan Komputerisasi Universitas Gunadarma
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i>Course Instructor and Assistant</i>
+                </h6>
+                <p class="card-text">
+                  Assisted in guiding and training over 100 participants in
+                  Comprehensive Oracle and C# Courses, focusing on PL/SQL
+                  database management and dynamic website development.
+                </p>
+                <a href="#" class="btn learn-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              class="card custom-card p-4 d-flex align-items-center flex-row"
+            >
+              <div class="col-4 text-center">
+                <img
+                  src="assets/img/technical-support.png"
+                  alt="Icon"
+                  class="card-icon img-fluid"
+                />
+              </div>
+              <div class="col-8">
+                <h5 class="card-title">PT Mega Manunggal Property Tbk</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i>Information Technology Intern</i>
+                </h6>
+                <p class="card-text">
+                  Prepared BRD and FSD with detailed system diagrams, analyzed
+                  and visualized over 2,000 records using Google Looker,
+                  conducted UAT to ensure system reliability and accuracy, and
+                  designed intuitive UI/UX in Figma to workflow efficiency.
+                </p>
+                <a href="#" class="btn learn-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects mt-4" id="projects">
+      <div class="container">
+        <h1 class="display-4 fw-bold text-center pb-4">Projects</h1>
+        <div
+          class="card border-0 pt-4 mt-4"
+          data-aos="fade-left"
+          id="project-1"
+        >
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <p
+                  style="
+                    background-color: #d1e5fc;
+                    display: inline-block;
+                    color: #253893;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                    font-weight: 500;
+                  "
+                >
+                  M-Paspor Mobile Application
+                </p>
+                <h3 class="card-title fw-bold">Redesign UI/UX M-Paspor</h3>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i>UI/UX Designer</i>
+                </h6>
+                <p class="card-text">
+                  The UI/UX redesign of the M-Paspor application was carried out
+                  to enhance the user experience in the digital passport
+                  application process. This project focused on simplifying the
+                  navigation flow, improving the visual appearance to make it
+                  more modern and intuitive, and optimizing the information
+                  layout so users can easily access key features. Through an
+                  analysis of issues in the previous design and the
+                  implementation of user-centered design principles, the
+                  redesign successfully improved the usability score from “Poor”
+                  (29.17) to “Good” (82.08), demonstrating a significant
+                  increase in efficiency, user satisfaction, and overall
+                  usability quality of the M-Paspor application.
+                </p>
+
+                <a
+                  href="#"
+                  class="btn text-light flex-end"
+                  style="background-color: #253893"
+                  >View Projects <i class="bi bi-caret-right-fill"></i
+                ></a>
+                <p class="card-text mt-3">
+                  <small class="text-muted">July 2025</small>
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="assets/img/M-Paspor.png"
+                  alt="M-Paspor"
+                  class="img-fluid rounded d-block mx-auto"
+                  style="max-height: 500px; width: auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card border-0 pt-4 mt-4"
+          data-aos="fade-left"
+          id="project-2"
+        >
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="assets/img/JejakSIKecil.jpg"
+                  alt="Quantum Journal"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-md-6">
+                <p
+                  style="
+                    background-color: rgba(186, 234, 255, 0.6);
+                    display: inline-block;
+                    color: #4590b0;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                    font-weight: 500;
+                  "
+                >
+                  FinTech Website
+                </p>
+                <h3 class="card-title fw-bold">JejakSIKecil</h3>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i>Full-Stack Developer</i>
+                </h6>
+                <p class="card-text">
+                  In this project, I developed a Finance Accounting System
+                  designed to automate journal entries and streamline financial
+                  processes within an organization. I was responsible for
+                  gathering and analyzing business requirements, which were then
+                  documented in a comprehensive Business Requirement Document
+                  (BRD) detailing system functionalities, business rules, and
+                  automation workflows. Additionally, I planned the project
+                  timeline, defined development tasks, and coordinated
+                  effectively with the team to ensure smooth execution. To
+                  ensure the system met business needs, I conducted User
+                  Acceptance Testing (UAT) to validate its functionality,
+                  accuracy, and overall alignment with user expectations. This
+                  project significantly improved operational efficiency and
+                  reduced manual errors in financial management activities.
+                </p>
+
+                <a
+                  href="#"
+                  class="btn text-light flex-end"
+                  style="background-color: #4590b0"
+                  >View Projects <i class="bi bi-caret-right-fill"></i
+                ></a>
+                <p class="card-text mt-3">
+                  <small class="text-muted">May 2024</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card border-0 pt-4 mt-4"
+          data-aos="fade-left"
+          id="project-3"
+        >
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <p
+                  style="
+                    background-color: rgba(186, 234, 255, 0.6);
+                    display: inline-block;
+                    color: #4590b0;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                    font-weight: 500;
+                  "
+                >
+                  Child Development Website
+                </p>
+                <h3 class="card-title fw-bold">JejakSIKecil</h3>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i>Full-Stack Developer</i>
+                </h6>
+                <p class="card-text">
+                  JejakSikecil website is the main source of information about
+                  child development through articles and other information,
+                  making it easier for users to get the necessary education.
+                  Through this platform, users can easily communicate and share
+                  information through the comment section available in each
+                  article. Therefore, the "JejakSikecil" website serves not only
+                  as a useful guide for parents and caregivers but also creates
+                  a space for valuable exchange of information and experiences
+                  in understanding and supporting optimal child development.
+                </p>
+
+                <a
+                  href="#"
+                  class="btn text-light flex-end"
+                  style="background-color: #4590b0"
+                  >View Projects <i class="bi bi-caret-right-fill"></i
+                ></a>
+                <p class="card-text mt-3">
+                  <small class="text-muted">May 2024</small>
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="assets/img/JejakSIKecil.jpg"
+                  alt="Quantum Journal"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 pt-4 mt-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mt-4" style="min-height: 400px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h1 class="fw-bold" data-aos="fade-up" data-aos-delay="100">
+              Contact
+            </h1>
+          </div>
+          <div class="col-md-10">
+            <hr
+              class="mt-4"
+              style="border: 1px solid #e3c7a0"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            />
+          </div>
+        </div>
+        <h2
+          class="fw-bold mb-3 text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Get in touch.
+        </h2>
+        <p
+          class="mb-4"
+          style="max-width: 700px; margin: 0 auto"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          Open to any exciting ventures, whether they’re freelance gigs,
+          internships, or entry-level roles. Shoot me a message with your
+          queries or just drop a friendly hello!
+        </p>
+        <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+          <a
+            href="mailto:fitrianienida@email.com"
+            class="btn btn-lg fw-semibold"
+            style="background-color: #cdb38c; color: #fff"
+          >
+            Send Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fixed Social Icons -->
+    <div class="social-fixed">
+      <a href="https://github.com/nidaftrianie" target="_blank"
+        ><i class="bi bi-github"></i
+      ></a>
+      <a href="https://instagram.com/ftrnnida_" target="_blank"
+        ><i class="bi bi-instagram"></i
+      ></a>
+      <a href="https://linkedin.com/in/nidafitrianie" target="_blank"
+        ><i class="bi bi-linkedin"></i
+      ></a>
+      <div class="garis-vertical ms-2"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
+  </body>
+</html>
