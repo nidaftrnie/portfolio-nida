@@ -143,3 +143,36 @@ h1 {
 .learn-btn:hover {
   background-color: #b38a67;
 }
+
+.certif-section {
+  position: relative;
+  background-image: url("../bg-cert.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: black;
+}
+
+.certif-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  max-height: 400px; 
+  object-fit: contain; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(17%) sepia(27%) saturate(285%) hue-rotate(347deg) brightness(40%) contrast(90%);
+}
+
+.carousel-caption{
+  background-color: rgba(163, 114, 45, 0.7);
+  border-radius: 20px;
+}
