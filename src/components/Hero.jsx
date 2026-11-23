@@ -88,6 +88,8 @@ export default function Hero() {
     <section className="hero" id="home" ref={rootRef}>
       <div className="hero-visual">
         <HeroCanvas />
+        {/* siluet foto di atas animasi, sehingga animasi tampak di belakang foto */}
+        <div className="hero-person" aria-hidden="true"></div>
         <div className="hero-content container">
           <div className="hero-text">
             <span className="eyebrow">

@@ -59,8 +59,8 @@ export default function HeroCanvas() {
     pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
     const tex = dotTexture();
     const pMat = new THREE.PointsMaterial({
-      color: 0xb08968, size: 0.32, map: tex, transparent: true,
-      opacity: 0.85, depthWrite: false, sizeAttenuation: true,
+      color: 0xd0ac94, size: 0.26, map: tex, transparent: true,
+      opacity: 0.5, depthWrite: false, sizeAttenuation: true,
     });
     group.add(new THREE.Points(pGeo, pMat));
 
@@ -69,11 +69,11 @@ export default function HeroCanvas() {
     const lGeo = new THREE.BufferGeometry();
     lGeo.setAttribute("position", new THREE.BufferAttribute(lPos, 3));
     lGeo.setDrawRange(0, 0);
-    const lMat = new THREE.LineBasicMaterial({ color: 0xd0ac94, transparent: true, opacity: 0.5 });
+    const lMat = new THREE.LineBasicMaterial({ color: 0xdcc3ad, transparent: true, opacity: 0.32 });
     group.add(new THREE.LineSegments(lGeo, lMat));
 
     // ---- bentuk wireframe emas ----
-    const wire = new THREE.MeshBasicMaterial({ color: 0xce9745, wireframe: true, transparent: true, opacity: 0.5 });
+    const wire = new THREE.MeshBasicMaterial({ color: 0xdcb878, wireframe: true, transparent: true, opacity: 0.32 });
     const geos = [
       new THREE.IcosahedronGeometry(1.5, 1),
       new THREE.TorusGeometry(1.1, 0.32, 12, 36),
