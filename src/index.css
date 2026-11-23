@@ -1888,8 +1888,8 @@ kbd {
 
 /* animasi hanya muncul di area kanan (di balik foto), tidak melewati teks */
 .hero-canvas {
-  -webkit-mask-image: linear-gradient(90deg, transparent 48%, #000 64%);
-  mask-image: linear-gradient(90deg, transparent 48%, #000 64%);
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.4) 48%, #000 66%);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.4) 48%, #000 66%);
 }
 
 @media (max-width: 767.98px) {
@@ -1898,7 +1898,7 @@ kbd {
   }
   /* di HP foto ada di bagian bawah, teks di atas */
   .hero-canvas {
-    -webkit-mask-image: linear-gradient(180deg, transparent 42%, #000 62%);
-    mask-image: linear-gradient(180deg, transparent 42%, #000 62%);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.35) 42%, #000 64%);
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.35) 42%, #000 64%);
   }
 }
