@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import SplitHeading from "./SplitHeading.jsx";
+import { projects, projectFilters } from "../data/content.js";
+import { refreshMotion, scrollToId } from "../lib/motion.js";
 
 const PAGE_SIZE = 5;
 
