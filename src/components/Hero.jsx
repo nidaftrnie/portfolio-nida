@@ -129,6 +129,12 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
+        {/* potret khusus HP/tablet kecil; di desktop foto ada di gambar latar */}
+        <div className="hero-portrait">
+          <span className="portrait-arch" aria-hidden="true"></span>
+          <img src="/assets/hero-portrait.png" alt="Portrait of Nida Fitrianie" />
+        </div>
       </div>
 
       <div className="container stats-wrap">
