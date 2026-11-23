@@ -42,13 +42,14 @@ export default function HeroCanvas() {
     scene.add(group);
 
     // ---- partikel + garis penghubung ----
-    const N = window.innerWidth < 768 ? 60 : 120;
+    const N = window.innerWidth < 768 ? 70 : 150;
     const LIM = { x: 15, y: 8, z: 6 };
     const THRESH2 = 3.4 * 3.4;
     const pos = new Float32Array(N * 3);
     const vel = new Float32Array(N * 3);
     for (let i = 0; i < N; i++) {
-      pos[i * 3] = (Math.random() * 2 - 1) * LIM.x;
+      // sebagian besar partikel di sisi kanan (area di balik foto)
+      pos[i * 3] = i < N * 0.65 ? 2 + Math.random() * 12 : (Math.random() * 2 - 1) * LIM.x;
       pos[i * 3 + 1] = (Math.random() * 2 - 1) * LIM.y;
       pos[i * 3 + 2] = (Math.random() * 2 - 1) * LIM.z;
       vel[i * 3] = (Math.random() - 0.5) * 0.014;
@@ -59,8 +60,8 @@ export default function HeroCanvas() {
     pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
     const tex = dotTexture();
     const pMat = new THREE.PointsMaterial({
-      color: 0xd0ac94, size: 0.26, map: tex, transparent: true,
-      opacity: 0.5, depthWrite: false, sizeAttenuation: true,
+      color: 0xbf9679, size: 0.3, map: tex, transparent: true,
+      opacity: 0.72, depthWrite: false, sizeAttenuation: true,
     });
     group.add(new THREE.Points(pGeo, pMat));
 
@@ -69,17 +70,17 @@ export default function HeroCanvas() {
     const lGeo = new THREE.BufferGeometry();
     lGeo.setAttribute("position", new THREE.BufferAttribute(lPos, 3));
     lGeo.setDrawRange(0, 0);
-    const lMat = new THREE.LineBasicMaterial({ color: 0xdcc3ad, transparent: true, opacity: 0.32 });
+    const lMat = new THREE.LineBasicMaterial({ color: 0xc9a78d, transparent: true, opacity: 0.5 });
     group.add(new THREE.LineSegments(lGeo, lMat));
 
     // ---- bentuk wireframe emas ----
-    const wire = new THREE.MeshBasicMaterial({ color: 0xdcb878, wireframe: true, transparent: true, opacity: 0.32 });
+    const wire = new THREE.MeshBasicMaterial({ color: 0xd2a35a, wireframe: true, transparent: true, opacity: 0.55 });
     const geos = [
       new THREE.IcosahedronGeometry(1.5, 1),
       new THREE.TorusGeometry(1.1, 0.32, 12, 36),
       new THREE.OctahedronGeometry(1.1, 0),
     ];
-    const spots = [[1.5, 5.6, -4], [10.5, -5, -2], [-5, -5.6, -1]];
+    const spots = [[4.5, 5.2, -4], [10.5, -5, -2], [-5, -5.6, -1]];
     const shapes = geos.map((g, i) => {
       const m = new THREE.Mesh(g, wire);
       m.position.set(...spots[i]);
